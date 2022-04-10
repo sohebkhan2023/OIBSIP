@@ -1,0 +1,95 @@
+body{
+    font-family: 'Merriweather', serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero{
+    min-height: 100vh;
+    background: 
+    linear-gradient(black,transparent),
+    url(./ilya-mashkov-_qxbJUr9RqI-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: slide 1s ease-in-out;
+    
+    
+}
+@keyframes slide{
+    from{
+        transform: translateX(-100%);
+    }to{
+        transform: translateX(0%);
+
+    }
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: white;
+
+}
+.nav ul{
+    list-style: none;
+
+}
+
+.nav ul li{
+    display: inline-block;
+    margin-left: 3rem;
+    font-size: 1.5rem;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid transparent;
+}
+.herotext{
+    color: white;
+    height: 90vh;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+}
+.herotext a{
+    color: white;
+    background-color: rgb(236, 217, 39);
+    font-weight: 900;
+    padding: 0.8rem 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    line-height: 1rem;
+    transition: opacity 250ms linear;
+    
+}
+.herotext h2{
+    font-size: 6rem;
+    
+
+    
+}
+.herotext a:hover{
+    opacity: 0.8;
+}
+
+
+
+.herotext p{
+    font-size: 1.5rem;
+}
+
+.nav ul li:hover{
+    border-bottom: 2px solid white;
+
+}
